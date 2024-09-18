@@ -16,15 +16,18 @@ The [original script](https://github.com/purry03/Username-Generator/blob/master/
 
 ## Changes Made
 The new version of the code introduces several improvements and additional functionalities:
-1. **Function Encapsulation**: The username generation logic is encapsulated in a function `generate_usernames(num)`, enhancing modularity and reusability.
-2. **Absolute File Paths**: The paths to the word lists and blacklist are specified as absolute paths to prevent issues related to file location.
+1. **Function Encapsulation**: The username generation logic is encapsulated in a function `generate_usernames(num, use_blacklist=True, append_number=True)`, enhancing modularity and reusability.
+2. **Dynamic File Paths**: The paths to the word lists and blacklist are specified as dynamic paths to prevent issues related to file location.
 3. **Clipboard Functionality**: Each generated username is automatically copied to the clipboard using the `pyperclip` library, allowing for easy pasting.
-4. **Command Line Arguments**: The script now accepts command-line arguments, allowing users to specify the number of usernames to generate directly via terminal.
+4. **Command Line Arguments**: The script now accepts command-line arguments, allowing users to specify the number of usernames to generate directly via the terminal, along with flags to control blacklist checking and number appending.
 5. **Case-Insensitive Blacklist Check**: The blacklist check is now case-insensitive, enhancing user experience by allowing variations in casing.
 6. **Improved User Feedback**: The script provides clear output, indicating which usernames have been generated and copied to the clipboard.
 
 ### Key Features of the New Code:
 - Supports generating multiple usernames via command-line input.
+- New flags:
+  - `--no-blacklist`: Ignore blacklisted words.
+  - `--no-number`: Do not append a number to usernames.
 - Improved input validation with error messages for invalid input.
 - Uses f-strings for clearer string formatting.
 - Enhanced readability and structure.
