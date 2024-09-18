@@ -31,9 +31,15 @@ The new version of the code introduces several improvements and additional funct
 - Improved input validation with error messages for invalid input.
 - Uses f-strings for clearer string formatting.
 - Enhanced readability and structure.
+## Dependencies
+1. Ensure you have Python installed on your system.
+2. Open a terminal or command prompt.
+3. Install the pyperclip library using the following command:
+```bash
+pip install pyperclip
+``` 
 
 ## Usage
-
 To run the script, either add the script to your $PATH or make an alias manually or run the add_to_path.py and it will do it automatically for you:
 
 for example:
