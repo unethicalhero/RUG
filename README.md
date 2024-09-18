@@ -35,6 +35,7 @@ The new version of the code introduces several improvements and additional funct
 ## Usage
 
 To run the script, either add the script to your $PATH or make an alias manually or run the add_to_path.py and it will do it automatically for you:
+
 for example:
 ```bash
 git clone https://github.com/unethicalhero/RUG.git
@@ -57,5 +58,5 @@ $ generate 5
 or run it directly from the script directory using the following command in your terminal:
 
 ```bash
-python generator.py <number_of_usernames>
+python <script_directory>/generator.py <number_of_usernames>
 ```
