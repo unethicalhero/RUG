@@ -34,11 +34,17 @@ The new version of the code introduces several improvements and additional funct
 
 ## Usage
 
-To run the script, either add the script to your $PATH or make an alias, for example:
+To run the script, either add the script to your $PATH or make an alias manually or run the add_to_path.py and it will do it automatically for you:
+for example:
+```bash
+git clone https://github.com/unethicalhero/RUG.git
+python ./RUG/add_to_path.py
+```
+or add it manually to your .bashrc or any shell script you use:
 ```bash
 alias generate='python3 <script_directory>/generator.py'
 ```
-For example :
+Usage example :
 
 ```bash
 $ generate 5
